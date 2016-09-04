@@ -1,0 +1,100 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+#container{
+	margin: 20px auto;
+	position: relative;
+	width: 293px;
+	height: 220px;
+	overflow: hidden;
+}
+.picture{
+	position: absolute;
+	width: 2100px;
+	height: 220px;
+	animation:scroll 10s infinite linear;
+	-webkit-animation:scroll 10s infinite linear;
+	-moz-animation:scroll 10s infinite linear;
+	-o-animation:scroll 10s infinite linear;
+}
+.picture img{
+	float: left;
+}
+.buttons{
+	height: 10px;
+	position: absolute;
+	bottom: 5px;
+	left: 110px;
+}
+.buttons li{
+	float: left;
+	cursor: pointer;
+	margin: 0 3px;
+	border-radius: 50%;
+	list-style-type: none;
+	width: 10px;
+	height: 10px;
+}
+.buttons li:nth-child(1){
+	-webkit-animation:first 10s infinite linear;
+	-moz-animation:first 10s infinite linear;
+	-o-animation:first 10s infinite linear;
+	animation:first 10s infinite linear;
+}
+.buttons li:nth-child(2){
+	-webkit-animation:second 10s infinite linear;
+	-moz-animation:second 10s infinite linear;
+	-o-animation:second 10s infinite linear;
+	animation:second 10s infinite linear;
+}
+.buttons li:nth-child(3){
+	-webkit-animation:third 10s infinite linear;
+	-moz-animation:third 10s infinite linear;
+	-o-animation:third 10s infinite linear;
+	animation:third 10s infinite linear;
+}
+.buttons li:nth-child(4){
+	-webkit-animation:forth 10s infinite linear;
+	-moz-animation:forth 10s infinite linear;
+	-o-animation:forth 10s infinite linear;
+	animation:forth 10s infinite linear;
+}
+.buttons li:nth-child(5){
+	-webkit-animation:fifth 10s infinite linear;
+	-moz-animation:fifth 10s infinite linear;
+	-o-animation:fifth 10s infinite linear;
+	animation:fifth 10s infinite linear;
+}
+@-webkit-keyframes scroll{
+	from,to{left:0;}
+	19%{left: 0;}
+	20%{left: -293px;}
+	39%{left: -293px;}
+	40%{left: -586px;}
+	59%{left: -586px;}
+	60%{left: -879px;}
+	79%{left: -879px;}
+	80%{left: -1172px;}
+	99%{left: -1172px;}
+}
+@-webkit-keyframes first{
+	from,to{background-color: red;}
+	20%{background-color: white;}
+}
+@-webkit-keyframes second{
+    from,to,20%{background-color: red;}
+    40%{background-color: white;}
+}
+@-webkit-keyframes third{
+    from,to,40%{background-color: red;}
+    60%{background-color: white;}
+}
+@-webkit-keyframes forth{
+    from,to,60%{background-color: red;}
+    80%{background-color: white;}
+}
+@-webkit-keyframes fifth{
+    from,to,80%{background-color: red;}
+    100%{background-color: white;}
+}
